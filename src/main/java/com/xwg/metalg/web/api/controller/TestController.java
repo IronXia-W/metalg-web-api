@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @RequestMapping("/hello")
-    public String sayHello(){
-        return "{'message1': 'SpringBoot你大爷','message2','SpringBoot你大爷2'}";
+    public String sayHello() {
+        String property = System.getProperty("name");
+        return "{'message1': '" + property + "','message2','SpringBoot呵呵'}";
     }
 }
