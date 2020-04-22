@@ -22,7 +22,7 @@
 
 <script>
   export default {
-    name: 'app ',
+    name: 'app2',
     created() {
     },
     data() {
